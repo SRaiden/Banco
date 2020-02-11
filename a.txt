@@ -1,0 +1,95 @@
+/*package frgp.utn.edu.ar.Servlet;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import frgp.utn.edu.ar.Modelo.Movimiento;
+import frgp.utn.edu.ar.Service.MovimientoService;
+
+
+@WebServlet("/MovimientoServlet")
+public class MovimientoServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public MovimientoServlet() {
+        super();
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String pase = "";
+        String action = request.getParameter("action");
+        
+        if (action != null) {
+	        if (action.equalsIgnoreCase("transferir"))
+	        {
+	        	pase = "/TransferiraCuenta.jsp";
+	        }
+	        else if (action.equalsIgnoreCase("pagarServicio"))
+	        {
+	        	//pase = "/PagarServicio.jsp";
+	        }
+	        else if (action.equalsIgnoreCase("historial"))
+	        {
+	        	//pase = "/Historial.jsp";
+	        }
+        }
+        else {
+        	//pase = "/TransferiraCuenta.jsp";
+        }
+        
+        if (pase == "/Historial.jsp") {
+
+        }
+        
+        RequestDispatcher view = request.getRequestDispatcher(pase);
+        request.setAttribute("lstTiposMovimiento", MovimientoService.traerTipoMovimiento());
+        view.forward(request, response);
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String accion = request.getParameter("action");
+    	HttpSession session = request.getSession();
+    	boolean Admin = (session.getAttribute("login") != null) ? session.getAttribute("login").equals("admin") : false;
+    	String pase = "/Inicio.jsp";
+    	
+		int IDCliente = Integer.parseInt(request.getParameter("idcliente")); // para historial
+		
+    	// PREGUNTAMOS SI ES AGREGAR Y SI INICIAMOS COMO USUARIO 
+    	if (accion.equalsIgnoreCase("Agregar") && Admin) {
+    		
+    		Movimiento mov = new Movimiento();
+    		mov.setIdCliente(Integer.parseInt(request.getParameter("idcliente")));
+    		mov.setCBU_Origen(request.getParameter("CBUOrigen"));
+    		mov.setCBU_Destino(request.getParameter("CBUDestino"));
+    		mov.setMonto(Double.parseDouble(request.getParameter("idcliente")));
+    		mov.setTipoMovimiento(Integer.parseInt(request.getParameter("tipoMovimiento")));
+    		
+    		String ID = request.getParameter("idMovimiento");
+    	
+    		if(ID == null || ID.isEmpty()) {
+    			MovimientoService.CrearMovimientoCuenta(mov);
+    		}
+    	
+    	}else {
+    		pase = "/Inicio.jsp";
+    	}
+    	
+    	if (pase != "/Inicio.jsp") {
+    		request.setAttribute("lstMovimientos", MovimientoService.Historial(IDCliente));
+            request.setAttribute("lstTiposMovimiento", MovimientoService.traerTipoMovimiento());
+    	}
+    	
+    	RequestDispatcher view = request.getRequestDispatcher(pase);
+        view.forward(request, response);
+	}
+
+}*/

@@ -1,0 +1,81 @@
+.tdCliente{
+	width: 65%;
+}
+
+.lblCliente{
+	margin-left: 65%;
+}
+
+.tdCuenta{
+	width: 65%;
+}
+
+.tdMovimiento{
+	width: 65%;
+}
+
+.lblCuenta{
+	margin-left: 65%;
+}
+
+.tdListarClientes{
+	text-align: center; 
+	width: 10%;
+}
+
+.tdListarCuentas{
+	text-align: center; 
+	width: 10%;
+}
+
+.tdListarServicios{
+	text-align: center; 
+	width: 10%;
+}
+
+.tdListarMovimiento{
+	text-align: center; 
+	width: 10%;
+}
+
+.tdListarUsuarios{
+	text-align: center; 
+	width: 10%;
+}
+
+.tdServicios{
+	width: 65%;
+}
+
+.lblServicios{
+	margin-left: 65%;
+}
+
+.tdUsuarios{
+	width: 65%;
+}
+
+.lblUsuarios{
+	margin-left: 65%;
+}
+
+.lblMovimiento{
+	margin-left: 65%;
+}
+
+.inpPass{
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    /* padding-right: 40%; */
+    margin-right: 50px;
+}
+
+.tdPerfil{
+	width: 65%;
+}
+
+.lblPerfil{
+	margin-left: 65%;
+}

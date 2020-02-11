@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+
+input[type="submit"]:hover{
+	background-color: #85c1e9;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	cursor: pointer;
+}

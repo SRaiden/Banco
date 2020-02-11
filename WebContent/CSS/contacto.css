@@ -1,0 +1,137 @@
+@charset "ISO-8859-1";
+
+
+#form{
+	
+}
+
+td{
+	width: 45%;
+}
+
+fieldset{
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+
+h1{
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+form {
+	padding: 30px;
+	background-color: #f7ffd0;
+	padding-left: 60px;
+}
+
+label {
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+input[type="text"]{
+	margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    /* padding-right: 40%; */
+    margin-right: 50px;
+}
+
+.unic{
+	margin-bottom: 5px;
+	float: left;
+}
+
+select{
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 83%;
+    margin-right: 50px;
+}
+
+input[type="date"]{
+margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    margin-top: 0px;
+}
+
+input[type="tel"]{
+    margin-bottom: 20px;
+    padding: 7px;
+    border: 2px solid gray;
+    width: 79%;
+    /* padding-top: 9px; */
+    margin-right: 50px;
+}
+
+input[type="email"]{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    margin-top: 0px;
+    margin-right: 50px;
+}
+
+input, textarea{
+	border:2px solid gray;
+}
+
+input:focus{
+	background-color: #fef9f7;
+}
+
+input[type="number"]{
+	margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    /* padding-right: 40%; */
+    margin-right: 50px;
+ }
+
+input[type="submit"]{
+    background-color: #1668c4;
+    color: #fff;
+    border: none;
+    width: 83%;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input[type="reset"]{
+    background-color: #1668c4;
+    color: #fff;
+    border: none;
+    width: 83%;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover{
+	background-color: #85c1e9;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	cursor: pointer;
+}
+
+input[type="reset"]:hover{
+	background-color: #85c1e9;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	cursor: pointer;
+}
+
+textarea{
+	resize: none;
+	max-height: 100px;
+	padding: 5px;
+	width: 100%;
+}

@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+.pie2 span{
+	float: right;
+	padding: 15px;
+	padding-top: 5px;
+}
+
+.pie2 a{
+	transition:all .5s ease-in-out;
+}
+
+.pie2 span a:hover{
+	filter: sepia(60%);
+}
+
+.pie2 p{
+	float: right;
+    margin-left: 6px;
+}
+
+hr{
+    box-shadow: 2px 2px 5px #999;
+}
